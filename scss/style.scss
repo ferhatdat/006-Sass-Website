@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import "variables";
+@import "buttons";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    @include set-background($primary-bgcolor);
+    font-family:$font-stack;
+}
+.alien{
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+
+            li{
+                padding: 1rem;
+            }
+
+            i {
+                display: none;
+            }
+            a:hover{
+                color: $secondary-color;
+            }
+        }
+        h3{
+            font-size: $fontSize * 2;
+            font-weight: 500;
+        }
+    }
+    &-ufos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1 {
+            color: $secondary-color;
+            font-size: $fontSize*4;
+            line-height: 1.2;
+        }
+        h2{
+            font-size: $fontSize*4; 
+        }
+        p{
+            font-size: $fontSize*2;
+            margin: 2rem 0;
+            font-weight: 600;
+        }
+        img{
+            width: 50%;
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color:set-text-color($primary-bgcolor);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@import "tablet";

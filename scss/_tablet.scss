@@ -1,0 +1,33 @@
+@media(max-width:770px){
+
+    .alien {
+        padding: 1rem;
+
+        nav{
+            margin-bottom: 1rem;
+            ul{
+                li{
+                    display: none;
+                }
+                i{
+                    display: inline-block;
+                    font-size: $fontSize*1.5;
+                }
+            }
+        }
+        &-ufos{
+            flex-direction: column;
+
+            img{
+              margin-top: 3rem;  
+            }
+            h1{
+                font-size: $fontSize*3.5;
+            }
+            h2{
+                font-size: $fontSize*3.5;
+            }
+            
+        }
+    }
+}

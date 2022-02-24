@@ -1,0 +1,34 @@
+%btn{
+    display: inline-block;
+    border-radius: 0.4rem;
+    padding: 0.5rem 2.1rem;
+    background-color: $secondary-color;  
+    color: #fff;
+    
+    &:hover{
+        color: #fff
+    }
+}
+
+.btn-ufos{
+    @extend %btn;
+    background: linear-gradient(to right, red 50%, $secondary-color 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out; 
+   
+    &:hover{
+        background-position: left bottom;  
+        
+    }
+}
+.btn-nav{
+    @extend %btn;
+    transition: all .5s ease-out;
+    &:hover{
+        background-position: left bottom;  
+        background-color: red;
+        color: #fff !important;
+    }
+
+}

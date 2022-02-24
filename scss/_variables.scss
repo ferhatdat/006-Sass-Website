@@ -1,0 +1,21 @@
+$primary-color:#3F3D56;
+$secondary-color: #00CC66;
+$primary-bgcolor:#F7F7F7;
+// $primary-bgcolor:#333;
+$secondary-bgcolor: #00CC66;
+$font-stack: "Kumbh Sans", sans-serif;
+$fontSize:1rem;
+
+
+@function set-text-color($color){
+    @if(lightness($color) > 70){
+        @return #333;
+    } @else{
+        @return #fff;
+    }
+}
+
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+}

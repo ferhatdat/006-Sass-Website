@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+.btn-ufos, .btn-nav {
+  display: inline-block;
+  border-radius: 0.4rem;
+  padding: 0.5rem 2.1rem;
+  background-color: #00CC66;
+  color: #fff;
+}
+
+.btn-ufos:hover, .btn-nav:hover {
+  color: #fff;
+}
+
+.btn-ufos {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, red), color-stop(50%, #00CC66));
+  background: linear-gradient(to right, red 50%, #00CC66 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.btn-ufos:hover {
+  background-position: left bottom;
+}
+
+.btn-nav {
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.btn-nav:hover {
+  background-position: left bottom;
+  background-color: red;
+  color: #fff !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7F7;
+  color: #333;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.alien nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alien nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.alien nav ul li {
+  padding: 1rem;
+}
+
+.alien nav ul i {
+  display: none;
+}
+
+.alien nav ul a:hover {
+  color: #00CC66;
+}
+
+.alien nav h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.alien-ufos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alien-ufos h1 {
+  color: #00CC66;
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.alien-ufos h2 {
+  font-size: 4rem;
+}
+
+.alien-ufos p {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.alien-ufos img {
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 770px) {
+  .alien {
+    padding: 1rem;
+  }
+  .alien nav {
+    margin-bottom: 1rem;
+  }
+  .alien nav ul li {
+    display: none;
+  }
+  .alien nav ul i {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  .alien-ufos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .alien-ufos img {
+    margin-top: 3rem;
+  }
+  .alien-ufos h1 {
+    font-size: 3.5rem;
+  }
+  .alien-ufos h2 {
+    font-size: 3.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
