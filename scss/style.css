@@ -48,6 +48,10 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.alien {
+  padding: 1rem;
+}
+
 .alien nav {
   display: -webkit-box;
   display: -ms-flexbox;
